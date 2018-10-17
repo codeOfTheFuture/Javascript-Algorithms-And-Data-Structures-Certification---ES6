@@ -7,11 +7,11 @@ function makeList(arr) {
   'use strict';
 
   // Change code below this line
-  const templeteArray = (str) => `<li class = 'text-warning'>${str}</li>`;
-  const resultDisplayArray = arr.map(templeteArray);
+  const templeteListItem = (str) => `<li class='text-warning'>${str}</li>`;
+  const resultDisplayArray = arr.map(templeteListItem);
   // Change code above this line
 
-  return resultDisplayArray;
+  return console.log(resultDisplayArray);
 }
 /**
  * makeList(result.failure) should return:
@@ -20,4 +20,3 @@ function makeList(arr) {
  *   `<li class="text-warning">linebreak</li>` ]
  **/
 const resultDisplayArray = makeList(result.failure);
-console.log(resultDisplayArray);
